@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Montserrat, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1140px;
+  min-width: 540px;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 90px;
+  display: flex;
+}
+.navbar .logo {
+  max-width: 1140px;
+  min-width: 540px;
+  margin: 0 auto;
+  margin-top: inherit !important;
+}
+.navbar .logo {
+  align-self: center;
+}
+.logo .img-logo {
+  width: 130px;
+  align-self: center;
+}
+.navbar .menu {
+  align-self: center;
+}
+.navbar .menu ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 0px 5px;
+}
+.navbar ul li a {
+  color: #181a18;
+  font-weight: bold;
+}
+.content {
+  background-image: url("../images/smiling-image.jpg");
+  background-size: cover;
+  background-position: 50% 25%;
+  padding: 60px 30px 40px;
+}
