@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+section:nth-of-type(1) {
+  margin-top: 6em;
+}
+section:nth-of-type(2) {
+  text-align: center;
+}
+section ul li {
+  list-style-type: none;
+}
+.widht-100-text-center {
+  width: 100%;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+}
+.first {
+  background-color: rgb(235, 200, 84);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  left: 28em;
+  top: 105px;
+}
+
+.second {
+  background-color: rgb(219, 219, 219);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+.third {
+  background-color: rgb(170, 142, 106);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+}
