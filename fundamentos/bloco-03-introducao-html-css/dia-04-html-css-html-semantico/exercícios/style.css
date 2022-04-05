@@ -59,8 +59,8 @@ a direita */
 /* Aqui basicamente eu crio um container para diminuir a largura
 onde ficará o conteúdo e "normalizo" com o margin 0 auto o desequilibrio
 entre as margens do elemento e empurro ele para baixo */
-.container > header {
-  margin-top: 5em;
+.container header h1 {
+  margin-top: 2.5em;
   text-align: center;
 }
 /* Aqui eu faço descendência direta indicando que SOMENTE o header que é
@@ -88,6 +88,7 @@ e que seu estilo de fonte seja itálico */
   color: rgb(104, 107, 107);
   margin-top: 1.5em;
 }
+
 /*
 Todo
 "p"  filho do container tenha seu texto centralizado h (ou bloco)
@@ -105,6 +106,7 @@ aside {
 aside table {
   float: right;
   margin-left: 1em;
+  margin-top: 1em;
 }
 /* Faço a tabela da barra lateral flutuar a direita
 para informações adicionais ao conteúdo */
@@ -130,8 +132,9 @@ aside table td {
 e alinho o texto ao centro
 Decidindo se vai ficar assim*/
 
-.container .content p {
-  /* text-align: start; */
+.container .content p,
+.content-facts p {
+  text-align: start;
   font-size: large;
   font-weight: 300;
   line-height: 1.5em;
@@ -146,9 +149,35 @@ aumento a altura entre as linhas e espaçamento entre as letras */
 }
 /* Centralizo a imagem e empurro ela tanto superiormente quanto inferiormente */
 .container .content-facts {
-  margin-bottom: 5em;
+  margin-top: 6em;
+}
+.content-facts section:nth-of-type(2) {
+  margin-top: 2em;
+}
+.container .content-facts p {
+  /* text-align: left; */
+}
+.content-facts div img {
+  width: 350px;
+  margin-top: 4em;
+  margin-left: 1em;
+  float: right;
 }
 
-.container .content-facts p {
-  text-align: left;
+.content-facts section:nth-of-type(3) {
+  margin-top: 2em;
 }
+
+.content-facts section:nth-of-type(3) img {
+  float: left;
+  margin-right: 1em;
+  margin-left: inherit;
+}
+.content-facts section:nth-of-type(3) .span-style-italic {
+  font-weight: inherit;
+  font-style: italic;
+}
+
+/* .content-facts section:nth-of-type(3) div:nth-of-type(2) {
+  margin-top: 3.5em;
+} */
