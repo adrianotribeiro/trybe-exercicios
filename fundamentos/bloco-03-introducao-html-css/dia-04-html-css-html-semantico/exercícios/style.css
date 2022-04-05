@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Merriweather", serif;
+}
+/* Determino que todos os filhos, e hiearquicamente abaixo dos filhos
+tenha tenham textos desta fonte */
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+/* Determina que todos os elementos a e suas pseudoclasses
+não possuam nenhuma decoração e cor preta */
+/* nav {
+} */
+
+.header-navbar {
+  padding: 0.5em 1em 0.1em 1em;
+  margin-bottom: 0;
+}
+/* Crio espaçamento para o logo não ficar tão colado com as laterais
+da borda
+E retiro a margem inferior para que a divisória chegue mais perto
+ */
+
+.header-navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* Garanto o acesso dos itens da lista com descendência
+Retiro as marcações da lista não ordenada
+Troco o tipo de display para que deixe de quebrar a linha(display block)
+E faço ele ficar fléxivel e numa única linha
+*/
+.menu,
+.logo {
+  display: inline;
+}
+/* Tanto as tags que possuem a classe menu e logo deixam de ser
+elementos de block e passam a serem em linha (pra não quebrarem mantendo os blocos
+na mesma linha) */
+.menu {
+  position: relative;
+  float: right;
+}
+/* Determinao que o menu fique relativo ao pai e faço ele flutuar
+a direita */
+.container {
+  max-width: 1140px;
+  min-width: 540px;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+/* Aqui basicamente eu crio um container para diminuir a largura
+onde ficará o conteúdo e "normalizo" com o margin 0 auto o desequilibrio
+entre as margens do elemento e empurro ele para baixo */
+.container > header {
+  margin-top: 5em;
+  text-align: center;
+}
+/* Aqui eu faço descendência direta indicando que SOMENTE o header que é
+filho de container vá mais para baixo e alinho ele horizontalmete(tem outros
+métodos) em relação ao bloco pai*/
+.container h1 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+/* Determino que o título esteja em negrito, tamanho de fonte 32px (se 1em equivaler
+a 1em) */
+
+/* .article div {
+  text-align: initial;
+} */
+.container h2:nth-of-type(1) {
+  text-align: center;
+  font-style: italic;
+}
+/* Aqui eu determino que o primeiro h2 esteja com texto alinhado horizontalmente
+e que seu estilo de fonte seja itálico */
+.container p {
+  text-align: center;
+  color: rgb(104, 107, 107);
+  margin-top: 1.5em;
+}
+/*
+Todo
+"p"  filho do container tenha seu texto centralizado h (ou bloco)
+tenha cor determinada e seja empurrado para baixo
+*/
+.container p span {
+  font-weight: bold;
+}
+/* Aqui utilizo span para determinar que apenas as palavras que span englobe
+esteja em negrito */
+aside {
+  margin-top: 5em;
+}
+/* empurro o conteúdo lateral para baixo*/
+aside table {
+  float: right;
+  margin-left: 1em;
+}
+/* Faço a tabela da barra lateral flutuar a direita
+para informações adicionais ao conteúdo */
+aside table,
+aside td {
+  border: 1px solid #333;
+}
+/* Crio uma borda para a tabela */
+aside thead {
+  background-color: #333;
+}
+/* Mudo a cor do plano de fundo do cabeçalho da tabela */
+aside thead img {
+  width: 16em;
+}
+/* Aumena a largura da imagem e por consequência seu tamanho */
+
+aside table td {
+  padding: 2px;
+  text-align: center;
+}
+/* "Compacto" mais o texto dentro das células
+e alinho o texto ao centro
+Decidindo se vai ficar assim*/
+
+.container .content p {
+  /* text-align: start; */
+  font-size: large;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+/* Por questão de estilização eu deixei o tamanho da fonte largo
+dou um pouco mais de "força/peso" na fonte
+aumento a altura entre as linhas e espaçamento entre as letras */
+.container .img-content {
+  margin: 5em;
+  text-align: center;
+}
+/* Centralizo a imagem e empurro ela tanto superiormente quanto inferiormente */
+.container .content-facts {
+  margin-bottom: 5em;
+}
+
+.container .content-facts p {
+  text-align: left;
+}
