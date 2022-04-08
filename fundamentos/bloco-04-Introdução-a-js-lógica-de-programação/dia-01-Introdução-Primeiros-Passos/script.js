@@ -168,6 +168,6 @@ console.log("");
 
 const custoProduto = 5;
 const valorVenda = 10;
-
+const impostoSobreProduto custoProduto;
 const valorCustoTotal = valor + impostoSobreProduto;
 const lucro = valorVenda - valorCustoTotal;
