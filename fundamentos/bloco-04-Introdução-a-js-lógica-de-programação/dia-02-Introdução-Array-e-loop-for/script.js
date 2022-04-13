@@ -97,3 +97,31 @@ for (let index = 0; index <= count; index += 1) {
   }
 }
 console.log(bigPrimo[bigPrimo.length - 1]);
+
+//Agora vamos trabalhar com algumas formas geométricas!
+//Faça um programa que, dado um valor n qualquer, seja n > 1
+//, imprima na tela um quadrado feito de asteriscos de lado de tamanho n . Por exemplo:
+
+// valor n, que seja n > 1;
+
+//inprima um quadrado feit ode asteriscos de lado e de tamanho n
+let n = 5;
+//Determina o tamanho do quadrado
+let ast = "*";
+
+let aux = [];
+// for (let index = 0; index < n; index += 1) {
+//   aux.push(ast);
+// }
+// for (let index = 0; index < n; index += 1) {
+//   console.log(aux.join(""));
+// }
+
+// for (let index = 0; index < n; index += 1) {
+//   aux.push(ast);
+//   console.log(aux.join(""));
+// }
+for (let index = 0; index < n; index += 1) {
+  aux.push(ast);
+  console.log(aux.join(" "));
+}
