@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 8em;
+  border: 1px solid;
+}
+.changeColors {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+.changeColors h5 {
+  margin-bottom: 0.5em;
+}
+.btn-colors {
+  border: 1px solid red;
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+  border-radius: 1.5em;
+}
+/* header - conteudo */
+.main-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.language-list {
+  text-align: center;
+}
+.language-list a {
+  color: black;
+}
+.language-list a:hover {
+  color: red;
+}
+.language {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px;
+}
+/* header - conteudo */
+/* conteudo */
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1.5em;
+}
+.summary-title {
+  margin-top: 0.5em;
+}
+.summary-title p:nth-of-type(1) {
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+}
+.summary-title p:nth-of-type(2) {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+hr {
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.article {
+  display: flex;
+  margin-top: 3em;
+}
+
+.article .article-content {
+  /* display: inline;
+  width: 48%; */
+}
+.article h2 {
+  font-weight: 400;
+  font-family: DauphinPlain;
+  text-align: justify;
+  margin-bottom: 0.5em;
+}
+.article-content p {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  margin: 0 1em;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.article-content p span {
+  font-weight: bold;
+}
