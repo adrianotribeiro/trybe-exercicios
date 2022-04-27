@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Exercicio</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1>Header da Página</h1>
+      </header>
+      <section class="container">
+        <form action="" method="GET">
+          <fieldset>
+            <legend>Formulário</legend>
+            <div class="nameArea">
+              <div class="input-container">
+                <label for="nome-completo">Nome: </label>
+              </div>
+              <input
+                type="text"
+                name="nome"
+                id="nome-completo"
+                placeholder="Digite o seu nome"
+
+              />
+            </div>
+            <div class="emailArea">
+              <div class="input-container">
+                <label for="input-email">Email: </label>
+              </div>
+              <input
+                type="email"
+                name="email"
+                id="input-email"
+                placeholder="Digite o seu email"
+              />
+            </div>
+            <div class="radio-area">
+              <input
+                type="radio"
+                value="primeiraOpcao"
+                name="opcoes"
+                id="primeiraOpcao"
+              />
+              <label for="primeiraOpcao">Cidade</label>
+              <input
+                type="radio"
+                value="segundaOpcao"
+                name="opcoes"
+                id="segundaOpcao"
+              />
+              <label for="segundaOpcao">Campo</label>
+              <input
+                type="radio"
+                value="terceiraOpcao"
+                name="opcoes"
+                id="terceiraOpcao"
+              />
+              <label for="terceiraOpcao">Praia</label>
+            </div>
+            <div class="textarea">
+              <div><label for="">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label></div>
+              <textarea
+                name="textArea"
+                id="textArea"
+                cols="60"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="dataArea">
+              <div>
+                <label for="">Data: </label>
+              </div>
+              <input type="date" name="date" id="date" />
+            </div>
+            <div class="checkboxArea">
+              <div>
+                <label for="checkbox"></label>
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                  />Gostaria de receber outras incríveis oportunidades
+                  oferecidas pela Trybe?</label
+                >
+              </div>
+
+              <div>
+                <div>
+                  <label for="checkbox2"
+                    ><input
+                      type="checkbox"
+                      name="checkbox2"
+                      id="checkbox2"
+                    />Concordo que imagens das minhas férias poderão ser usadas
+                    na divulgação de concursos futuros.</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="image-area">
+                <input type="file" name="image" id="image" >
+                <label for="image-checkbox">
+                    <input type="checkbox" name="image-checkbox" id="image-checkbox" required>
+                    Eu autorizo o uso das imagens
+                </label>
+            </div>
+          </fieldset>
+          <div class="buttonArea">
+            <button type="submit" id="btn-enviar">ENVIAR</button>
+            <button type="reset"id="btn-apagar">APAGAR</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
