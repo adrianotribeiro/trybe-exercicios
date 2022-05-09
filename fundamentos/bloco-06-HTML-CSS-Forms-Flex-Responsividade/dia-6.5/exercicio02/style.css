@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Testado no http://www.responsinator.com/ */
+
+@media screen and (max-width: 734px) and (min-width: 375px) {
+  header {
+    height: 11em !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif, Arial, Helvetica;
+    box-shadow: 0px 0px 7px black;
+    color: white;
+    background-color: darkseagreen;
+  }
+  header p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  nav ul {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  header ul li {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0 1em 0 0;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  .aside-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d4dede;
+    margin: 0.5em;
+  }
+  .aside-one h2 {
+    margin-bottom: 0px;
+  }
+  .aside-one ul {
+    padding-left: 16px;
+  }
+  .aside-one ul li {
+    text-align: left;
+    list-style-type: none;
+    margin: 0.68em 0;
+    font-size: unset;
+  }
+  .aside-two {
+    background-color: #d4dede;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .aside-two h2 {
+    text-align: center;
+  }
+  .aside-two ul {
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .aside-two ul li {
+    text-align: left;
+    list-style-type: none;
+    margin: 0.68em 0;
+    font-size: unset;
+  }
+
+  .main-content {
+    background-color: #d4dede;
+
+    margin: 0.5em;
+    padding: 1em;
+  }
+  .main-content h1 {
+    font-size: 1.5em;
+    margin: 0.67em 0;
+    text-align: center;
+  }
+  .main-content p {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d4dede;
+
+    margin: 0.5em;
+    padding: 1em;
+  }
+}
+@media only screen and (max-width: 734px) and (min-width: 733px) {
+  header {
+    height: 9em !important;
+  }
+  .aside-one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aside-two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 685px) and (min-width: 667px) {
+  .aside-one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aside-two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+header {
+  background-color: darkseagreen;
+  display: flex;
+  justify-content: space-evenly;
+  height: 6em;
+}
+header p {
+  align-self: center;
+}
+header ul {
+  display: flex;
+  justify-content: end;
+}
+header ul li {
+  list-style-type: none;
+  margin: 0 1em;
+}
+header nav {
+  align-self: flex-end;
+}
+.aside-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4dede;
+}
+
+.aside-one ul li {
+  list-style-type: none;
+}
+
+.aside-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4dede;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4dede;
+  padding: 2em;
+}
+footer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 7px black;
+
+  flex-direction: column;
+}

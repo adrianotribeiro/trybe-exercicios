@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Exercicio 6.2</title>
+  </head>
+  <body>
+    <header class="header flex justify-center items-center">
+      <h1 class="text-2xl text-center">FORMULÁRIO SHOW</h1>
+    </header>
+    <main class="main">
+      <section class="container mx-auto w-10/12">
+        <div class="background-form bg-amber-800">
+          <div class="flex justify-center">
+            <form action="" method="GET" class="w-2/4">
+              <!-- <div class="w-full mb-6">
+                <label for="">Cadastre aqui suas informações</label>
+              </div> -->
+              <div class="nameArea">
+                <label for="" class="block">Nome: </label>
+                <input
+                  class="mt-0"
+                  type="text"
+                  name="name"
+                  id="input-name"
+                  placeholder="Digite seu nome completo"
+                />
+              </div>
+              <div class="emailArea mt-3">
+                <label for="" class="block">Email: </label>
+                <input
+                  class="mt-0"
+                  type="email"
+                  name="email"
+                  id="input-email"
+                  placeholder="Digite seu email"
+                />
+              </div>
+              <div class="selected-area mt-3">
+                <label for="" class="block"
+                  >Selecione o estado onde você mora</label
+                >
+                <select name="estado" id="changeState">
+                  <option value="sp">São Paulo</option>
+                  <option value="mg">Minas Gerais</option>
+                  <option value="ap">Amapá</option>
+                  <option value="rs" selected>Rio Grande do Sul</option>
+                </select>
+              </div>
+              <div class="img-area">
+                <p>Selecione sua foto:</p>
+                <input type="file" name="imagePerfil" id="img-perfil" />
+              </div>
+              <div class="textArea mt-2">
+                <label for="" class="block">Escreva algo sobre você</label>
+                <textarea
+                  name="textArea"
+                  id="text-area"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div class="radioInputArea mt-3">
+                <div clas="flex items-center">
+                  <p>Comidas Favoritas</p>
+                  <input
+                    type="radio"
+                    name="favorite-foods"
+                    id="foods-1"
+                    value="pizza"
+                    checked
+                  />
+                  <label for="foods-1">Pizza</label>
+                  <input
+                    type="radio"
+                    name="favorite-foods"
+                    id="foods-2"
+                    value="lasanha"
+                    checked
+                  />
+                  <label for="foods-2">Lasanha</label>
+                  <input
+                    type="radio"
+                    name="favorite-foods"
+                    id="foods-3"
+                    value="strogonoff"
+                    checked
+                  />
+                  <label for="foods-3">Strogonoff</label>
+                </div>
+              </div>
+              <div class="checkBoxArea flex items-center mt-3">
+                <input type="checkbox" name="promotions" id="checkbox-news" />
+                <label for="checkbox-news"
+                  >Deseja receber noticias e promoções</label
+                >
+              </div>
+              <button
+                class="border border-solid border-gray-900 w-24 rounded-md bg-gray-700"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

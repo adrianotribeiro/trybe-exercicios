@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+}
+.container {
+  border: 1px solid red;
+  height: 100vh;
+  max-width: 1024px;
+  min-width: 570px;
+  margin: 0 auto;
+}
+.content {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.content .lateral,
+.content .central {
+  border: 1px solid rgb(92, 80, 255);
+  height: 50px;
+}
+.direita,
+.esquerda,
+.central {
+  margin: 2px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blocks {
+  background-color: blue;
+  width: 51px;
+  height: 40px;
+  margin: 3px;
+}
